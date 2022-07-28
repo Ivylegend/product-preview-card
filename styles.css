@@ -1,0 +1,135 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  background-color: white;
+  width: 650px;
+  border-radius: 20px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  padding: 25px;
+}
+
+h1 {
+  margin: 15px auto;
+  color: hsl(212, 21%, 14%);
+}
+
+h3 {
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+
+.text {
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  font-weight: 500;
+  padding-right: 30px;
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+}
+
+.price {
+  margin: 5px auto 15px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  display: inline-block;
+}
+
+.price-1 {
+  font-size: 2.5rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.price-2 {
+  margin-left: 20px;
+  text-decoration: line-through;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(158, 36%, 37%);
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+button:hover{
+    background-color: hsl(157, 77%, 9%);
+    cursor: pointer;
+}
+
+.cart {
+  width: 16px;
+  margin-right: 10px;
+}
+
+@media (min-width: 701px){
+    .left{
+        width: 50%;
+        content: url(images/image-product-desktop.jpg);
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .left{
+       width: 100%;
+       content: url(images/image-product-mobile.jpg);
+       border-radius: 20px 20px 0 0;
+    }
+
+    .right{
+       width: 100%;
+    }
+
+    
+
+img{
+    border-radius: 20px 20px 0 0;
+}
+}
+   
